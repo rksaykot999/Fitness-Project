@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.font-Inter {
+    font-family: "Inter", sans-serif;
+}
+.primary-btn {
+    background-color: #E6533C;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 42px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.secondary-btn{
+    background: none;
+    color: white;
+    padding: 12px 40px;
+    border: 1px solid white;
+    border-radius: 42px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header {
+    background: linear-gradient(to top, #111111, #777777);
+    padding: 60px 190px 0 190px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    font-weight: 800;
+    color: #E6533C;
+    width: 123px;
+    height: 43px;
+    font-size: 43px;
+}
+
+.nav-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 47px;
+    padding: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 50px;
+    width: 465px;
+    border-radius: 39px;
+}
+
+.nav-element li {
+    list-style: none;
+}
+
+.nav-element li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav .active {
+    color: white;
+    background-color: #E6533C;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-title {
+    color: white;
+    font-size: 78px;
+    font-weight: 700;
+}
+
+.hero-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+}
+.hero-image{
+    position: relative;
+}
+
+.workout-image {
+    position: absolute;
+    top: 125px;
+    left: 230px;
+}
+
+
+.tutorial-image {
+    position: absolute;
+    bottom: 63px;
+    right: 265px;
+}
