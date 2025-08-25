@@ -1,0 +1,26 @@
+@media (max-width:768px) {
+    header {
+        padding: 30px 5px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .workout-image {
+        position: absolute;
+        top: 180px;
+        left: 100px;
+    }
+
+    .nav-element {
+        width: 100vw;
+        gap: 10px;
+    }
+
+    .tutorial-image {
+        position: absolute;
+        bottom: 63px;
+        right: 120px;
+    }
+}
