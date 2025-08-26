@@ -23,4 +23,17 @@
         bottom: 63px;
         right: 120px;
     }
+
+    .habit {}
+
+    .habit-description {
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .habit-image {
+        flex-direction: column;
+        gap: 40px;
+        margin: 0 198px;
+    }
 }
