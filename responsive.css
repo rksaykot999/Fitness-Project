@@ -1,39 +1,231 @@
-@media (max-width:768px) {
+/* ===========================
+   BASIC FIX FOR SMALL DEVICES
+=========================== */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ============= MOBILE (Max-width: 576px) ============= */
+@media (max-width: 576px) {
+
     header {
-        padding: 30px 5px;
+        padding: 20px;
     }
 
-    .hero {
+    .navbar {
         flex-direction: column;
-    }
-
-    .workout-image {
-        position: absolute;
-        top: 180px;
-        left: 100px;
+        gap: 20px;
     }
 
     .nav-element {
-        width: 100vw;
-        gap: 10px;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+        padding: 10px;
     }
 
-    .tutorial-image {
-        position: absolute;
-        bottom: 63px;
-        right: 120px;
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
     }
 
-    .habit {}
+    .hero-title {
+        font-size: 40px;
+    }
 
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        width: 250px !important;
+        position: static;
+    }
+
+    /* Habit */
     .habit-description {
-        margin: 0;
-        padding: 0 20px;
+        margin: 0 20px;
     }
 
     .habit-image {
         flex-direction: column;
-        gap: 40px;
-        margin: 0 198px;
+        margin: 0;
+    }
+
+    /* Run Section */
+    .run-parent {
+        padding: 20px;
+    }
+
+    .run-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Workout Grid */
+    .training-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .workout-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    /* BMI */
+    .bmi-section {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .input-style {
+        width: 100%;
+    }
+
+    select.input-style {
+        width: 100% !important;
+    }
+
+    /* Team Section */
+    .member-box {
+        flex-direction: column;
+    }
+
+    .member-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .team-member h4,
+    .team-member p {
+        left: 10px;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+        text-align: center;
     }
 }
+
+/* ============= TABLET (577px – 991px) ============= */
+@media (min-width: 577px) and (max-width: 991px) {
+
+    header {
+        padding: 40px 40px 0 40px;
+    }
+
+    .nav-element {
+        width: auto;
+        gap: 25px;
+        padding: 10px 20px;
+    }
+
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+
+    .hero-image img {
+        width: 300px !important;
+        position: static;
+    }
+
+    /* Habit */
+    .habit-description {
+        margin: 0 40px;
+    }
+
+    .habit-image {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+    }
+
+    /* Run Section */
+    .run-parent {
+        padding: 50px;
+    }
+
+    .run-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    /* Workout Grid */
+    .training-section {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .workout-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* BMI Section */
+    .bmi-section {
+        flex-direction: column;
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .input-style {
+        width: 45%;
+    }
+
+    select.input-style {
+        width: 95% !important;
+    }
+
+    /* Team Section */
+    .member-box {
+        flex-wrap: wrap;
+    }
+
+    .member-image {
+        width: 300px;
+        height: auto;
+    }
+
+    /* Footer */
+    .footer-content {
+        padding: 40px;
+        gap: 40px;
+    }
+}
+
+/* ============= LARGE DEVICES (≥ 992px) ============= */
+@media (min-width: 992px) {
+
+    header {
+        padding: 60px 150px 0 150px;
+    }
+
+    .training-section {
+        padding: 80px 150px;
+    }
+
+    .bmi-section {
+        padding: 80px 150px;
+    }
+
+    .footer-content {
+        padding: 60px 150px;
+    }
+}
+
